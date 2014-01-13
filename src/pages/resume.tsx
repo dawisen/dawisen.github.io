@@ -1,10 +1,8 @@
 import React from "react";
+import ResumePage from "../app/components/pageLayouts/resumePage/resumePage";
 
 export default function Resume() {
-	return (
-    <section>
-      <h1>My Resume</h1>
-      Work history and my skills and stuff
-    </section>
+  return (
+    <ResumePage />
 	)
 }
