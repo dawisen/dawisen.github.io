@@ -1,0 +1,130 @@
+/*** Import Fonts ***/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+/*** Variables ***/
+$Lato: 'Lato', sans-serif;
+$Open-sans: 'Open Sans', sans-serif;
+$dark-gray: #3c3c3c;
+$light-gray: #a6a6a6;
+$UIblue: #3CBBF7;
+$UIred: #E74C3C;
+$UIyellow: #F8E71C;
+$UIgreen: #13bf11;
+$dark-brown: #542900;
+
+
+#toggle-container {
+  margin-top: 20px;
+}
+
+.slider {
+
+  i {
+    transition: all .3s ease-in-out;
+
+    &:before {
+      transition: all .3s ease-in-out;
+    }
+
+    &:after {
+      font-family: $Lato;
+      color: white;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: none;
+      content: 'Dribbble';
+      position: absolute;
+      opacity: 0;
+      top: 2.5px;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+input#theme-toggle {
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+
+  &+label {
+    display: inline-block;
+    position: relative;
+    box-shadow: inset 0 0 0px 1px $light-gray;
+    text-indent: -5000px;
+    height: 30px;
+    width: 50px;
+    border-radius: 15px;
+  }
+
+  &+label:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background: transparent;
+    -moz-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+
+  &+label:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, .2), 0 2px 4px rgba(0, 0, 0, .2);
+    -moz-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+
+  &:checked+label:before {
+    width: 50px;
+    background: $UIblue;
+  }
+
+  &:checked+label:after {
+    left: 20px;
+    box-shadow: inset 0 0 0 1px $UIblue, 0 2px 4px rgba(0, 0, 0, .2);
+  }
+}
+
+// mobile and tablet layouts
+@media only screen and (max-width: 596px) {
+  #toggle-container {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  input#theme-toggle {
+    &+label {
+      height: 25px;
+      width: 45px;
+    }
+
+    &+label:before {
+      height: 25px;
+      width: 25px;
+    }
+
+    &+label:after {
+      height: 25px;
+      width: 25px;
+    }
+
+    &:checked+label:before {
+      width: 45px;
+    }
+  }
+}
