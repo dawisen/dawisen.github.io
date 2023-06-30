@@ -5,7 +5,7 @@ export default function ToggleButton() {
   return (
 		  <div id="toggle-container">
 				  <input type="checkbox" name="theme-toggle" id="theme-toggle"/>
-				  <label htmlFor="theme-toggle">theme slider</label>
+				  <label htmlFor="theme-toggle" id="theme-toggle-label">theme slider</label>
 		  </div>
   )
 }
