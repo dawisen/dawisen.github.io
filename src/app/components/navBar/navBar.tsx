@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss"
 import ToggleButton from "../toggleButton/toggleButton";
 
-export default function NavBar() {
+export default function NavBar({ toggleTheme }) {
 	return (
 		<nav className="navbar-container">
 			<ul className="nav navbar">
@@ -10,7 +10,7 @@ export default function NavBar() {
 				<li className="nav-item"><a href="#projects">PROJECTS</a></li>
 				<li className="nav-item"><a href="#resume">RESUME</a></li>
 			</ul>
-			<ToggleButton />
+			<ToggleButton toggleTheme={toggleTheme} />
 		</nav>
 	)
 }

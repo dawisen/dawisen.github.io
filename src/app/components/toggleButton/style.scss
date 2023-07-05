@@ -25,6 +25,7 @@ input#theme-toggle {
   max-width: 0;
   opacity: 0;
 
+  // label size, border color etc
   &+label {
     display: inline-block;
     position: relative;
@@ -59,7 +60,7 @@ input#theme-toggle {
     top: 0;
     left: 0px;
     border-radius: 15px;
-    background: url(../../../../public/sun.svg), white;
+    background: $lightThemeIcon;
     background-repeat: no-repeat;
     background-size: 27px 27px;
     background-position: center center, 50%, 50%;
@@ -80,6 +81,19 @@ input#theme-toggle {
   }
 }
 
+input#theme-toggle {
+  &+label.dark-theme:after {
+    background: $darkThemeIcon;
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: center center, 50%, 50%;
+    box-shadow: inset 0px 0px 0px 1px black, 0 2px 4px black;
+  }
+  // label border color
+  &+label.dark-theme {
+    box-shadow: inset 0 0 0px 1px black;
+  }
+}
 // mobile and tablet layouts
 @media only screen and (max-width: 596px) {
   #toggle-container {
