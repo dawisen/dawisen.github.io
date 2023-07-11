@@ -4,10 +4,12 @@ import React, { useRef } from "react";
 import NavBar from "./components/navBar/navBar";
 
 export default function Home() {
-  const bodyContainerRef = useRef(null);
+  const bodyContainerRef = useRef<HTMLDivElement>(null);
   const toggleTheme = (toggleBtn) => {
-    bodyContainerRef.current.classList.toggle("dark-theme");
-    toggleBtn.classList.toggle("dark-theme");
+    if (bodyContainerRef && bodyContainerRef.current) {
+      bodyContainerRef.current.classList.toggle("dark-theme");
+      toggleBtn.classList.toggle("dark-theme");
+    }
   }
 
   return (
