@@ -1,10 +1,10 @@
 1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/0e539201b83a4854.css",{"as":"style"}]
-0:["ptQ8pUOgaGbGlBzC_xRmb",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0e539201b83a4854.css","precedence":"next"}]],["$L4",["$","meta",null,{"name":"next-size-adjust"}]]]]]]
+0:["GEsiEfCRySgctbPzgL7ON",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0e539201b83a4854.css","precedence":"next"}]],["$L4",["$","meta",null,{"name":"next-size-adjust"}]]]]]]
 5:HL["/_next/static/css/bffa78325ba7f52c.css",{"as":"style"}]
-6:I{"id":"3211","chunks":["272:static/chunks/webpack-b4fa9ba0b5eaffef.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
-7:I{"id":"5767","chunks":["272:static/chunks/webpack-b4fa9ba0b5eaffef.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
-8:I{"id":"7396","chunks":["272:static/chunks/webpack-b4fa9ba0b5eaffef.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
-9:I{"id":"5145","chunks":["931:static/chunks/app/page-02c2b2b182f6f96b.js"],"name":"","async":false}
+6:I{"id":"3211","chunks":["272:static/chunks/webpack-ab4a0f37f5d11555.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
+7:I{"id":"5767","chunks":["272:static/chunks/webpack-ab4a0f37f5d11555.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
+8:I{"id":"7396","chunks":["272:static/chunks/webpack-ab4a0f37f5d11555.js","253:static/chunks/bce60fc1-1affe0173a2e8d75.js","769:static/chunks/769-3fe0b4eb1458da2e.js"],"name":"","async":false}
+9:I{"id":"5145","chunks":["629:static/chunks/629-481365ca000c1bd7.js","931:static/chunks/app/page-a661a84c3eb610aa.js"],"name":"","async":false}
 3:[["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_0ec1f4","children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L7",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","$L8",null,{"propsForComponent":{"params":{}},"Component":"$9"}],null],"segment":"__PAGE__"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bffa78325ba7f52c.css","precedence":"next"}]]}]}]}],null]
 4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Danielle Wisen"}],["$","meta","2",{"name":"description","content":"Danielle Wisen's personal website"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}]]
