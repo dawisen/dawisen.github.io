@@ -9,6 +9,8 @@ export const metadata = {
   description: `Danielle Wisen's personal website`
 }
 
+// This is the default layout, do not make changes here
+// only the root layout requires html and body tags
 export default function RootLayout({
   children,
 }: {
