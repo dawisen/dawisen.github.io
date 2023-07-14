@@ -11,7 +11,7 @@ export default function ResumePage() {
         <Link href={'https://www.linkedin.com/in/daniellewisen1/'}>LinkedIn</Link>
       </section>
       <section id="summary">Summary</section>
-      <section id="work-experience">Experience
+      <section id="experience">Experience
       </section>
       <section id="skills">Skills</section>
       <section id="education">Education</section>

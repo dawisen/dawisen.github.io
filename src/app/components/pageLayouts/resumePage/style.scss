@@ -1,0 +1,22 @@
+section#contact-info {
+  grid-area: contact;
+}
+section#summmary {
+  grid-area: summary;
+}
+section#experience {
+  grid-area: experience;
+}
+section#education {
+  grid-area: education;
+}
+
+div#resume-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:        
+      "contact contact"
+      "summary experience"
+      "education experience";
+}
