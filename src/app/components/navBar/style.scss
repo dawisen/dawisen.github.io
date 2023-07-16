@@ -57,17 +57,6 @@ body {
   font-weight: 300;
 }
 
-h2 {
-  font-size: 100px;
-  position: relative;
-  color: #5b85c0;
-  background-image: -webkit-linear-gradient(90deg, #a558d4 0%, #34619e 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear;
-  animation: hue 60s infinite linear;
-}
 /*** Navbar ***/
 
 .navbar-container {

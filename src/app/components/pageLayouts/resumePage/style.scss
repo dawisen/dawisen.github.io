@@ -1,6 +1,31 @@
 section#contact-info {
+  display: grid;
   grid-area: contact;
+  align-content: space-between;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+
+  div.contact-links {
+    display: flex;
+    flex-direction: column;
+    a {
+        padding-bottom: 0.25rem;
+    }
+  }
+
+  h1 {
+    display: flex;
+    position: relative;
+    color: #5b85c0;
+    background-image: -webkit-linear-gradient(90deg, #a558d4 0%, #34619e 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    animation: hue 60s infinite linear;
+  }
 }
+
 section#summmary {
   grid-area: summary;
 }
