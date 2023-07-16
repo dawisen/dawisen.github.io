@@ -2,7 +2,7 @@ section#contact-info {
   display: grid;
   grid-area: contact;
   align-content: space-between;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 80% 20%;
   grid-template-rows: auto;
 
   div.contact-links {
@@ -37,11 +37,14 @@ section#education {
 }
 
 div#resume-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas:        
-      "contact contact"
-      "summary experience"
-      "education experience";
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:        
+    "contact contact"
+    "summary experience"
+    "education experience";
+  ul li {
+    list-style-type: none;
+  }
 }
