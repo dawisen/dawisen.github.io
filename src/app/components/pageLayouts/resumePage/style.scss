@@ -1,28 +1,82 @@
-section#contact-info {
+div#resume-container {
   display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: auto;
+  grid-template-areas:        
+    "contact contact"
+    "summary experience"
+    "education experience"
+    "skills experience";
+
+  h2 {
+    margin: 0;
+    font-size: 30px;
+    margin-block-start: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  p {
+    margin: 0.5rem 0;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  p.subsection-title {
+    font-size: 20px;
+  }
+
+  ul {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 400;
+    ul {
+      list-style-type: circle;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+section#contact-info {
+  display: flex;
+  flex-direction: row;
   grid-area: contact;
   align-content: space-between;
   grid-template-columns: 80% 20%;
   grid-template-rows: auto;
+  width: 100%;
 
-  div.contact-links {
+  div#name-and-title {
     display: flex;
     flex-direction: column;
-    a {
-        padding-bottom: 0.25rem;
+    width: 50%;
+    
+    h1 {
+      font-size: 46px;
+      display: flex;
+      position: relative;
+      color: #5b85c0;
+      background-image: -webkit-linear-gradient(90deg, #a558d4 0%, #34619e 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 60s infinite linear;
+      animation: hue 60s infinite linear;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    p {
+      margin-top: 0;
     }
   }
-
-  h1 {
+  div#contact-links {
     display: flex;
-    position: relative;
-    color: #5b85c0;
-    background-image: -webkit-linear-gradient(90deg, #a558d4 0%, #34619e 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
-    animation: hue 60s infinite linear;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    a {
+      padding-bottom: 0.25rem;
+    }
   }
 }
 
@@ -31,20 +85,17 @@ section#summmary {
 }
 section#experience {
   grid-area: experience;
+  margin-left: 1.25rem;
+  
+  a {
+    display: block;
+    font-size: 17px;
+  }
 }
 section#education {
   grid-area: education;
 }
-
-div#resume-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-template-areas:        
-    "contact contact"
-    "summary experience"
-    "education experience";
-  ul li {
-    list-style-type: none;
-  }
+section#skills {
+  grid-area: skills;
 }
+
