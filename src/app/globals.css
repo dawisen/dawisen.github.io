@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Roboto+Mono&display=swap');
 
 body {
   margin: 0;
@@ -17,7 +17,7 @@ div#body-container {
 }
 
 .dark-theme {
-  color: white;
+  color: #e5e5e5;
   background-color: #1e1e1e;
 
   .nav a, .navbar a {
@@ -28,6 +28,14 @@ div#body-container {
   }
 }
 
+.dark-theme div#resume-container a {
+  color: #68acfa;
+}
+
 .grid {
   display: grid;
+}
+
+a:active {
+  font-weight: bold;
 }

@@ -11,7 +11,7 @@ export default function ResumePage() {
           <p>Software Engineer</p>
         </div>
         <div id="contact-links">
-          <Link href={'daniellewwise@gmail.com'}>daniellewwise@gmail.com</Link>
+          <Link href={'mailto:daniellewwise@gmail.com'}>daniellewwise@gmail.com</Link>
           <Link href={'https://github.com/dawisen'}>GitHub</Link>
           <Link href={'https://www.linkedin.com/in/daniellewisen1/'}>LinkedIn</Link>
         </div>
