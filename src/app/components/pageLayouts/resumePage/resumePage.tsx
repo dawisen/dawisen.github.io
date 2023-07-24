@@ -92,8 +92,10 @@ export default function ResumePage() {
         <p>Heroku, Bitbucket, Jira, Git, AWS, GitHub Actions</p>
       </section>
       <section id="education"><h2>Education</h2>
-        <p className="subsection-title">Full-Stack Coding Bootcamp Certificate, The University of North Carolina at Chapel Hill</p>
-        <p className="subsection-title">Bachelor of Arts in English Language and Writing, North Carolina State University</p>
+        <p className="subsection-title">UNC Chapel Hill</p>
+        <p>Full-Stack Coding Bootcamp</p>
+        <p className="subsection-title">NC State University</p>
+        <p>Bachelor of Arts in English Language and Writing</p>
       </section>
     </div>
 	)
