@@ -11,12 +11,13 @@ div#resume-container {
 
   h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 35px;
     margin-block-start: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fragment Mono', monospace;
+    font-weight: normal;
   }
   p {
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem;
     font-size: 16px;
     font-weight: 400;
   }
@@ -53,7 +54,7 @@ section#contact-info {
     width: 50%;
     
     h1 {
-      font-size: 70px;
+      font-size: 71px;
       display: flex;
       position: relative;
       color: #5b85c0;
@@ -66,11 +67,13 @@ section#contact-info {
       margin-bottom: 0;
       margin-top: 0;
       margin-left: -4px;
-      font-family: 'Fira Sans', sans-serif;
+      font-family: 'Anton', sans-serif;
+      font-weight: normal;
+      margin-block-end: 0;
     }
     p {
-      margin-top: 0;
-      margin-bottom: 2rem;
+      margin-top: -10px;
+      margin-bottom: 1rem;
       font-size: 27px;
     }
   }
@@ -97,7 +100,7 @@ section#experience {
     font-size: 17px;
   }
   ul {
-    padding-inline-start: 2rem;
+    padding-inline-start: 1.2rem;
   }
 }
 section#education {

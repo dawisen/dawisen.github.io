@@ -1,0 +1,24 @@
+section {
+  display: flex;
+  font-family: 'Sulphur Point', sans-serif;
+}
+
+div#intro {
+  width: 50%;
+}
+
+#pic-of-me {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 61%;
+}
+
+.emphasize-text {
+  color: rgba(241, 88, 88, 1);
+}
+
+.link {
+  color: rgba(128, 193, 255, 1);
+  text-decoration: none;
+}

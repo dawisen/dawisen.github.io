@@ -39,7 +39,7 @@ body {
   width: 500px;
   margin: auto;
   margin-top: 20px;
-  font-family: $Lato;
+  font-family: 'Sulphur Point', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -51,22 +51,23 @@ body {
   flex-wrap: nowrap;
 
   a {
+    display: block;
     color: $dark-gray;
     text-decoration: none;
+    border-bottom: 1px solid $dark-gray;
+    // padding: 5px 0;
   }
 
   .nav-item {
-    padding: 5px 0;
-    border: 1px solid transparent;
+    cursor: pointer;
   }
   .nav-item:hover {
     font-weight: 900;
   }
-  .nav-item:active {
-    border-bottom: 1px solid $dark-gray;
-    border-style: groove;
+  .nav-item a:active {
+    color: rgb(111, 194, 255);
+    border-bottom: 1px solid rgb(111, 194, 255);
   }
-
 }
 
 .active {

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap&family=Sulphur+Point:wght@700&display=swap');
 
 body {
   margin: 0;
@@ -22,9 +24,10 @@ div#body-container {
 
   .nav a, .navbar a {
     color: #e5e5e5;
+    border-bottom: 1px solid white;
   }
   .nav-item:active {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(111, 194, 255);
   }
 }
 

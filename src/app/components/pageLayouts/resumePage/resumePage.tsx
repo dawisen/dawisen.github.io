@@ -8,16 +8,16 @@ export default function ResumePage() {
       <section id="contact-info">
         <div id="name-and-title">
           <h1>Danielle Wisen</h1>
-          <p>Software Engineer</p>
+          <p>SOFTWARE ENGINEER</p>
         </div>
         <div id="contact-links">
-          <Link href={'mailto:daniellewwise@gmail.com'}>daniellewwise@gmail.com</Link>
-          <Link href={'https://github.com/dawisen'}>GitHub</Link>
-          <Link href={'https://www.linkedin.com/in/daniellewisen1/'}>LinkedIn</Link>
+          <a href={'mailto:daniellewwise@gmail.com'}>daniellewwise@gmail.com</a>
+          <a href={'https://github.com/dawisen'}>GitHub</a>
+          <a href={'https://www.linkedin.com/in/daniellewisen1/'}>LinkedIn</a>
         </div>
       </section>
       <section id="summary">
-        <h2>Summary</h2>
+        <h2>SUMMARY</h2>
         <p>
           Highly motivated engineer with a background in teaching and writing.
           Experienced in both frontend and backend development with two years of experience
@@ -27,7 +27,7 @@ export default function ResumePage() {
         </p>
       </section>
       <section id="experience">
-        <h2>Experience</h2>
+        <h2>EXPERIENCE</h2>
         <div>
           <p className="subsection-title">
             Software Engineer
@@ -85,13 +85,13 @@ export default function ResumePage() {
           </ul>
         </div>
       </section>
-      <section id="skills"><h2>Skills</h2>
+      <section id="skills"><h2>SKILLS</h2>
         <p className="subsection-title">Software</p>
         <p>JavaScript, React, TypeScript, Express, Java, Node, Electron, MongoDB, JSON, Python Vue.js, MySQL</p>
         <p className="subsection-title">Tooling</p>
         <p>Heroku, Bitbucket, Jira, Git, AWS, GitHub Actions</p>
       </section>
-      <section id="education"><h2>Education</h2>
+      <section id="education"><h2>EDUCATION</h2>
         <p className="subsection-title">UNC Chapel Hill</p>
         <p>Full-Stack Coding Bootcamp</p>
         <p className="subsection-title">NC State University</p>
