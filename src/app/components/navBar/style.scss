@@ -1,5 +1,5 @@
 /*** Import Fonts ***/
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
 
 /*** Variables ***/
 $Lato: 'Lato', sans-serif;
@@ -11,16 +11,6 @@ $UIred: #E74C3C;
 $UIyellow: #F8E71C;
 $UIgreen: #13bf11;
 $dark-brown: #542900;
-
-/* -------------------------------- 
-		General Style
--------------------------------- */
-
-html,
-body {
-  font-family: $Lato;
-  font-weight: 300;
-}
 
 /*** Navbar ***/
 

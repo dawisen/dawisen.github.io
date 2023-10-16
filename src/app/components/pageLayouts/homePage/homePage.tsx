@@ -1,8 +1,8 @@
+import './style.scss';
 import Link from "next/link";
 import React from "react";
-import myicon from "../../../../../public/DANIELLEICON.png";
+import myicon from "../../../../../public/website_banner.png";
 import Image from "next/image";
-import './style.scss';
 
 export default function ResumePage() {
   return (
@@ -16,7 +16,7 @@ export default function ResumePage() {
       <p>
         I believe in the power of technology to transform ideas into reality.
         My unique approach to programming, coupled with a passion for collaboration,
-        enables me to drive innovation and create meaningful digital experiences.
+        allows me to create meaningful digital experiences.
       </p>
       <p>
         Check out my <Link className="link" href={'/resume'}>resume</Link> and

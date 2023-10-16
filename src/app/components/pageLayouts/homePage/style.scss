@@ -1,17 +1,19 @@
 section {
   display: flex;
+  justify-content: space-between;
   font-family: 'Sulphur Point', sans-serif;
 }
 
 div#intro {
-  width: 50%;
+  width: 33%;
+  font-size: 16px;
 }
 
 #pic-of-me {
   display: inline-block;
   width: auto;
   height: auto;
-  max-width: 61%;
+  max-height: 440px;
 }
 
 .emphasize-text {

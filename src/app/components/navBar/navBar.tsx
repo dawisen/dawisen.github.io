@@ -1,5 +1,5 @@
-import React from "react";
 import "./style.scss"
+import React from "react";
 import ToggleButton from "../toggleButton/toggleButton";
 import Link from "next/link";
 
