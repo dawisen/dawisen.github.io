@@ -1,0 +1,20 @@
+
+{ 
+  "projects": 
+  [
+    {
+      "id": "1",
+      "name": "Bud Buddy",
+      "html_url": "https://github.com/dawisen/budbuddy",
+      "description": "Bud Buddy is like a friend who helps you take care of your plants... one that happens to to be an expert in growing plants. You can search plants by name and get info about what soil they need, how often to water, how much sunlight they need, when to fertilize, etc.",
+      "active_deployment_url": "https://dawisen.github.io/budbuddy/"
+    },
+    {
+      "id": "2",
+      "name": "Employee Directory",
+      "html_url": "https://github.com/dawisen/employee-directory",
+      "description": "Employee Directory is a React application that allows users to display employee information and dynamically update the directory with data from a connected API or database.",
+      "active_deployment_url": "https://www.daniellewisen.com/employee-directory/"
+    }
+  ]
+}
