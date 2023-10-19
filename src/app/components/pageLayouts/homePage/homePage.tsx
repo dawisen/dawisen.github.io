@@ -26,7 +26,7 @@ export default function ResumePage() {
         If you think I would be a good fit for your team, contact me at <a className="link" href="mailto:daniellewwise@gmail.com">daniellewwise@gmail.com</a>.
       </p>
       </div>
-      <Image id="pic-of-me" src={myicon} alt={"picture of Danielle Wisen"}></Image>
+      <Image id="pic-of-me" src={myicon} alt={"picture of Danielle Wisen"} priority={true}></Image>
     </section>
 	)
 }

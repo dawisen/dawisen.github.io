@@ -10,8 +10,8 @@ export default function NavBar({ toggleTheme }) {
 				<li className="nav-item"><Link href="/">HOME</Link></li>
 				<li className="nav-item"><Link href="/projects">PROJECTS</Link></li>
 				<li className="nav-item"><Link href="/resume">RESUME</Link></li>
+				<ToggleButton toggleTheme={toggleTheme} />
 			</ul>
-			<ToggleButton toggleTheme={toggleTheme} />
 		</nav>
 	)
 }

@@ -1,8 +1,12 @@
+import "./style.scss"
 import React, { useEffect, useState } from "react";
-import { getProjects, getAllDeployments, getActiveDeployment } from "../../../../utils/github/api";
+import projects from "./projectList.json";
+import Image from "next/image";
+import linkIcon from "../../../../../public/link-solid.svg";
+import githubIcon from "../../../../../public/github.svg";
 
 interface project {
-  id: number;
+  id: string;
   name: string;
   html_url: string;
   description: string;
@@ -12,73 +16,37 @@ interface project {
 export default function ProjectPage() {
   const [projectList, setProjectList] = useState<project[]>([])
   const [loading, setLoading] = useState(false);
+  const projectJSON: project[]= [...projects.projects]
 
   useEffect(() => {
-    const createProjectList = async () => {
-      setLoading(true);
-      try {
-        const projectRes = await getProjects();
-        let projectArr: project[] = [];
-        
-        for (let i = 0; i < 3; i++) {
-          let project:project = {
-            id: 0,
-            name: "",
-            html_url: "",
-            description: "",
-            active_deployment_url: ""
-          };
-          if (projectRes[i] !== undefined) {
-            project.id = projectRes[i].id
-            project.name = projectRes[i].name;
-            project.html_url = projectRes[i].html_url;
-            project.description = projectRes[i].description;
-            let projectDeployments = await getAllDeployments(projectRes[i]?.name);
-  
-            if (projectDeployments !== undefined && projectDeployments.length !== 0) {
-              let activeDeployment = await getActiveDeployment(projectRes[i]?.name, projectDeployments[0]?.id);
-              project.active_deployment_url = activeDeployment[0].environment_url;
-            }
-            else project.active_deployment_url = '';
-            projectArr.push(project);
-          }
-        }
-        
-        setProjectList(projectArr);
-        setLoading(false);
-      }
-      catch(error) {
-        console.error(error);
-        setProjectList([]);
-        setLoading(false);
-      }
-    }
-
-    createProjectList()
+    setProjectList(projectJSON);
   }, [])
 
 	return (
     <section>
-      <h1>Projects</h1>
-      <p>Here are some recent projects I&apos;ve worked on</p>
+      <h1 id="title">RECENT PROJECTS</h1>
+      <p id="subtitle">Here&apos;s what I&apos;ve been working on lately.</p>
       {loading ? 'Loading...' : null}
       {!loading && projectList.length ?
         <ul>
           {
             projectList?.map((project) => {
               return (
-                <li key={project.id}>
-                  <p>{project.name}</p>
-                  <p>{project.description}</p>
-                  <a href={project.html_url}>GitHub Repository</a>
-                  {project.active_deployment_url !== '' ?
-                    <a href={project.active_deployment_url}>Live Demo</a>
-                    : null
-                  }
-                </li>
+                  <a href={project.html_url} key={project.id} >
+                    <li id={"box-"+project.id}>
+                      <p className="project-name">{project.name}</p>
+                      <p className="project-description">{project.description}</p>
+                    </li>
+                  </a>
               )
             })
           }
+          <a href="https://github.com/dawisen">
+            <li id="last">
+            FIND MORE ON MY GITHUB PAGE
+            <Image className="github" alt="github-icon"src={githubIcon}/>
+            </li>
+          </a>
         </ul> : null
       }
     </section>

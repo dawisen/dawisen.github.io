@@ -2,6 +2,9 @@ import './style.scss';
 import React from "react";
 import Image from "next/image";
 import logo from "../../../../../public/logo.svg";
+import emailIcon from "../../../../../public/email.svg";
+import githubIcon from "../../../../../public/github.svg";
+import linkedinIcon from "../../../../../public/linkedin.svg";
 
 export default function ResumePage() {
 	return (
@@ -12,9 +15,9 @@ export default function ResumePage() {
             <Image alt="danielle wisen logo" src={logo} priority={true} />
           </div>
           <div id="contact-links">
-            <a href={'mailto:daniellewwise@gmail.com'}>daniellewwise@gmail.com</a>
-            <a href={'https://github.com/dawisen'}>GitHub</a>
-            <a href={'https://www.linkedin.com/in/daniellewisen1/'}>LinkedIn</a>
+            <a href={'mailto:daniellewwise@gmail.com'}><Image className='icon' alt="email icon" src={emailIcon} priority={true} /> daniellewwise@gmail.com</a>
+            <a href={'https://github.com/dawisen'}><Image className="icon" alt="github-icon"src={githubIcon}/> GitHub</a>
+            <a href={'https://www.linkedin.com/in/daniellewisen1/'}><Image className="icon" alt="github-icon"src={linkedinIcon}/> LinkedIn</a>
           </div>
         </section>
         <section id="skills"><h2>SKILLS</h2>

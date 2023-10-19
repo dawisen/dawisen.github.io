@@ -52,6 +52,7 @@ section#contact-info {
       width: auto;
       max-height: 195px;
     }
+    margin-bottom: 4px;
   }
   div#contact-links {
     display: flex;
@@ -59,6 +60,11 @@ section#contact-info {
     font-size: 16px;
     a {
       padding-bottom: 0.25rem;
+    }
+    img.icon {
+      max-width: 15px;
+      max-height: 15px;
+      vertical-align: middle;
     }
   }
 }
