@@ -39,6 +39,11 @@ div#body-container {
   display: grid;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(128, 193, 255);
+}
+
 a:active {
   font-weight: bold;
 }
